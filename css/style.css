@@ -1,0 +1,113 @@
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* NEWS GRID */
+.news-large, .news-small {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  transition: transform 0.3s;
+}
+.news-large:hover, .news-small:hover {
+  transform: scale(1.02);
+}
+.news-large img, .news-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: #fff;
+  padding: 15px;
+}
+.news-overlay h5, .news-overlay h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Bookmark Icon */
+.bookmark-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: gold;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 2;
+}
+.bookmark-icon:hover {
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .news-large {
+    height: 300px;
+  }
+  .news-small {
+    height: 180px;
+  }
+}
+@media (min-width: 993px) {
+  .news-large {
+    height: 350px;
+  }
+  .news-small {
+    height: 180px;
+  }
+}
+
+/* === GRID WRAPPER === */
+#news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* === KIRI (BIG NEWS) === */
+.news-column-left {
+  flex: 0 0 65%;      /* kiri 65% layar */
+  max-width: 65%;
+}
+
+/* === KANAN (SMALL NEWS) === */
+.news-column-right {
+  flex: 0 0 33%;      /* kanan 33% layar */
+  max-width: 33%;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 992px) {
+  .news-column-left,
+  .news-column-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
