@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+  color: #f8f9fa;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.account-card {
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.account-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 45px rgba(255, 215, 0, 0.25);
+}
+
+.account-card p {
+  font-size: 1rem;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form-control:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+.btn-warning {
+  background: linear-gradient(45deg, #ffb700, #ffcc00);
+  border: none;
+}
+.btn-warning:hover {
+  background: linear-gradient(45deg, #ffd84d, #ffe580);
+  transform: scale(1.03);
+}
+
+.btn-danger {
+  transition: 0.3s;
+}
+.btn-danger:hover {
+  background-color: #ff4747;
+  transform: scale(1.03);
+}
+
+hr {
+  border-color: #444;
+}
+
+footer {
+  font-size: 0.9rem;
+}

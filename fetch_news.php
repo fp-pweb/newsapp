@@ -1,9 +1,9 @@
 <?php
 // ========================================
-// fetch_news.php — proxy dengan User-Agent dan .env
+// fetch_news.php — proxy server untuk NewsAPI
 // ========================================
 
-// Baca API key dari .env
+// Baca API key dari file .env
 $env = parse_ini_file(__DIR__ . '/.env');
 $apiKey = $env['API_KEY'] ?? null;
 
@@ -29,14 +29,14 @@ if ($type === 'everything' && $query) {
     if ($category) $url .= "&category=" . urlencode($category);
 }
 
-// Siapkan cURL
+// Gunakan cURL agar stabil dan tambahkan User-Agent
 $ch = curl_init();
 curl_setopt_array($ch, [
     CURLOPT_URL => $url,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_HTTPHEADER => [
-        "User-Agent: NewsApp/1.0 (+http://localhost/newsapp)", // 🔹 WAJIB
+        "User-Agent: NewsApp/1.0 (+http://localhost/newsapp)",
         "Accept: application/json"
     ]
 ]);
@@ -55,7 +55,7 @@ if ($response === FALSE || empty($response)) {
     exit;
 }
 
-// Kirim balik ke frontend
+// Kirim hasil ke frontend
 header('Content-Type: application/json');
 echo $response;
 ?>
