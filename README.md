@@ -1,8 +1,4 @@
-Berikut adalah versi akhir **README.md** yang bersih dan terformat rapi tanpa pertanyaan tambahan.
 
----
-
-````markdown
 # Portal Berita Online
 
 Sistem portal berita berbasis web yang menampilkan berita terkini dari berbagai sumber menggunakan integrasi **NewsAPI.org**.  
