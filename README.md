@@ -71,6 +71,10 @@ Dilengkapi dengan fitur login, register, bookmark, dan tampilan modern yang resp
 | `password` | VARCHAR(255) | Password terenkripsi |
 | `created_at` | TIMESTAMP | Waktu pembuatan akun |
 
+![Bookmark Table](<img width="1083" height="278" alt="Image" src="https://github.com/user-attachments/assets/fcb26bf1-1755-4599-8f63-12a9d7b31d13" />)
+
+![User Table](<img width="1066" height="385" alt="Image" src="https://github.com/user-attachments/assets/0499712b-fa28-404f-a1b5-913098d39138" />)
+
 **SQL Struktur:**
 ```sql
 CREATE TABLE users (
