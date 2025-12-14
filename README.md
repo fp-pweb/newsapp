@@ -71,16 +71,27 @@ Dilengkapi dengan fitur login, register, bookmark, dan tampilan modern yang resp
 | `password` | VARCHAR(255) | Password terenkripsi |
 | `created_at` | TIMESTAMP | Waktu pembuatan akun |
 
-**SQL Struktur:**
-```sql
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) NOT NULL UNIQUE,
-  email VARCHAR(100) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-````
+**Tabel: `bookmarks`**
+
+| No | Nama Kolom | Tipe Data | Atribut | Nilai Bawaan | Keterangan |
+|----|-------------|-----------|----------|----------------|-------------|
+| 1 | `id` | `INT(11)` | PRIMARY KEY, AUTO_INCREMENT | - | ID unik untuk setiap bookmark |
+| 2 | `user_id` | `INT(11)` | INDEX | - | ID pengguna yang menyimpan bookmark (relasi ke tabel `users.id`) |
+| 3 | `title` | `VARCHAR(255)` | NOT NULL | - | Judul berita |
+| 4 | `summary` | `TEXT` | NULL | NULL | Ringkasan isi berita |
+| 5 | `image` | `VARCHAR(255)` | NULL | NULL | URL gambar berita |
+| 6 | `source` | `VARCHAR(100)` | NULL | NULL | Nama sumber berita |
+| 7 | `url` | `VARCHAR(255)` | NULL | NULL | Tautan berita asli |
+| 8 | `note` | `TEXT` | NULL | NULL | Catatan tambahan pengguna (opsional) |
+| 9 | `created_at` | `TIMESTAMP` | DEFAULT CURRENT_TIMESTAMP | current_timestamp() | Waktu saat bookmark dibuat |
+
+---
+
+### Relasi Antar Tabel
+
+### Relasi dengan tabel `users`
+Tabel `bookmarks` memiliki kolom `user_id` yang berfungsi sebagai **foreign key** untuk menghubungkan data bookmark dengan akun pengguna.
+
 
 ---
 
