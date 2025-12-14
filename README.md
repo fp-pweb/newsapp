@@ -228,11 +228,10 @@ CREATE TABLE users (
 
 ## Jobdesk
 
-Dikembangkan sebagai proyek portal berita dengan integrasi API menggunakan PHP dan JavaScript.
 
-| Nama     | Tugas                             |
-| ------------ | ----------------------------------------------- |
-| Muhammad Hafidz Harridil Mahali     | Frontend, Integrasi API, Testing |
-| Wahid Badar A      | Backend, Database, Testing             |
-| Jhonatan Christopher Lundu Simorangkir    | Testing, Diagram Kerja, Frontend                           |
+| Nama     | NRP | Tugas                             |
+| ------------ | ----------------------------------------------- |----------------------------------------------- |
+| Muhammad Hafidz Harridil Mahali   | 5025221030 | Frontend, Integrasi API, Testing |
+| Wahid Badar A     |5025221025| Backend, Database, Testing             |
+| Jhonatan Christopher Lundu Simorangkir  | 5025221316 | Testing, Diagram Kerja, Frontend                           |
 
