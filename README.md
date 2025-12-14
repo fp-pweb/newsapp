@@ -16,8 +16,8 @@ Dilengkapi dengan fitur login, register, bookmark, dan tampilan modern yang resp
 ### Fitur Utama
 1. **Tampilan Berita Dinamis**  
    - Dua kolom tampilan:
-     - Kiri: 2 berita utama besar  
-     - Kanan: 4 berita tambahan kecil  
+     - Besar: 2 berita utama  
+     - Kecil: 1-4 berita lain  
    - Semua berita diambil secara real-time dari NewsAPI.
 2. **Pencarian Berita**  
    - Pengguna dapat mencari berita berdasarkan kata kunci.
