@@ -234,5 +234,5 @@ Dikembangkan sebagai proyek portal berita dengan integrasi API menggunakan PHP d
 | ------------ | ----------------------------------------------- |
 | Muhammad Hafidz Harridil Mahali     | Frontend, Integrasi API, Testing |
 | Wahid Badar A      | Backend, Database, Testing             |
-| Jhonatan L S     | Testing, Diagram Kerja, Frontend                           |
+| Jhonatan Christopher Lundu Simorangkir    | Testing, Diagram Kerja, Frontend                           |
 
