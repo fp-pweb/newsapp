@@ -226,9 +226,15 @@ CREATE TABLE users (
 
 ---
 
-## Author
+## Jobdesk
 
 Dikembangkan sebagai proyek portal berita dengan integrasi API menggunakan PHP dan JavaScript.
+
+| Nama     | Tugas                             |
+| ------------ | ----------------------------------------------- |
+| Muhammad Hafidz Harridil Mahali     | Frontend, Integrasi API, Testing |
+| Wahid Badar A      | Backend, Database, Testing             |
+| Jhonatan L S     | Testing, Diagram Kerja, Frontend                           |
 
 ```
 ```
