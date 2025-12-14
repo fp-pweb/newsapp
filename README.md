@@ -236,5 +236,3 @@ Dikembangkan sebagai proyek portal berita dengan integrasi API menggunakan PHP d
 | Wahid Badar A      | Backend, Database, Testing             |
 | Jhonatan L S     | Testing, Diagram Kerja, Frontend                           |
 
-```
-```
